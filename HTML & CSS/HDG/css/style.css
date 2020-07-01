@@ -237,6 +237,45 @@ p {
   border-radius: 50%;
 }
 
+/* Contact Form */
+#contact-form .form-group {
+  margin-bottom: 20px;
+}
+
+#contact-form label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#contact-form input,
+#contact-form textarea {
+  width: 100%;
+  padding: 10px;
+  border: 1px #ddd solid;
+}
+
+#contact-form input:focus,
+#contact-form textarea:focus {
+  outline: none;
+  border-color: #f7c08a;
+}
+
+#contact-form textarea {
+  height: 200px;
+}
+
+/* Contact Info*/
+#contact-info .box {
+  float: left;
+  width: 33.3%;
+  padding: 50px;
+  text-align: center;
+}
+
+#contact-info .box i {
+  margin-bottom: 10px;
+}
+
 /* Footer */
 #main-footer {
   text-align: center;
