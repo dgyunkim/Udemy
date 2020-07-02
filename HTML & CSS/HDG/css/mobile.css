@@ -14,9 +14,14 @@
   border-bottom: #444 dotted 1px;
 }
 
+/* ShowCase */
+#showcase .showcase-content {
+  padding-top: 100px;
+}
+
 /* Home Info */
 #home-info {
-  height: 350px;
+  height: 450px;
 }
 
 #home-info .info-img {

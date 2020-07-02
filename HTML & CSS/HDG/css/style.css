@@ -92,6 +92,7 @@ p {
 
 .l-heading {
   font-size: 40px;
+  line-height: 1.2;
 }
 
 /* Navbar */
@@ -170,7 +171,7 @@ p {
   width: 50%;
   height: 100%;
   text-align: center;
-  padding: 50px 30px;
+  padding: 100px 30px;
   overflow: hidden;
 }
 
