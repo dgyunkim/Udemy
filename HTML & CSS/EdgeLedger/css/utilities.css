@@ -74,11 +74,11 @@
 
 .flex-columns .row {
   display: flex;
+  flex-wrap: wrap;
 }
 
 .flex-columns .row .column {
-  flex: 1;
-  display: flex;
+  flex: 50%;
 }
 
 .flex-columns .column .column-1,
@@ -105,7 +105,7 @@
 }
 
 .flex-columns h2 {
-  font-size: 40px;
+  font-size: 32px;
   line-height: 1.2;
   margin-bottom: 15px;
 }

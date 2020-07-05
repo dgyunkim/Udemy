@@ -29,6 +29,7 @@ a {
 }
 
 img {
+  display: block;
   width: 100%;
   height: 100%;
 }
@@ -104,6 +105,10 @@ img {
 
 .showcase * {
   z-index: 1;
+}
+
+.showcase .navbar {
+  z-index: 2;
 }
 
 /* Icons */
@@ -192,4 +197,43 @@ footer {
 
 .blog-home * {
   z-index: 1;
+}
+
+/* Mobile */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    height: 90px;
+    justify-content: flex-start;
+  }
+
+  .showcase-content h1 {
+    font-size: 38px;
+  }
+
+  .navbar ul li a {
+    padding: 10px 10px;
+    margin: 0 1px;
+  }
+
+  .navbar ul li a:hover {
+    border: none;
+  }
+
+  .flex-items {
+    flex-direction: column;
+  }
+
+  .flex-columns .row,
+  .flex-columns.flex-reverse .row {
+    flex-direction: column;
+  }
+
+  .flex-grid .row {
+    flex-wrap: wrap;
+  }
+
+  .flex-grid .column {
+    flex: 100%;
+  }
 }
