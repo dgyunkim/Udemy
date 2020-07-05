@@ -7,21 +7,6 @@
   color: #2a5dcc;
 }
 
-/* Background Color */
-.bg-primary {
-  background: #189c2e;
-  color: #fff;
-}
-
-.bg-secondary {
-  background: #2a5dcc;
-  color: #fff;
-}
-
-.bg-light {
-  background: #f5f5f5;
-  color: #333;
-}
 /* Button */
 .btn {
   display: inline-block;
@@ -42,6 +27,31 @@
 
 .btn:hover {
   opacity: 0.9;
+}
+
+/* Background & Button Color */
+.bg-primary,
+.btn-primary {
+  background: #189c2e;
+  color: #fff;
+}
+
+.bg-secondary,
+.btn-secondary {
+  background: #2a5dcc;
+  color: #fff;
+}
+
+.bg-light,
+.btn-light {
+  background: #f5f5f5;
+  color: #333;
+}
+
+.bg-dark,
+.btn-dark {
+  background: #333;
+  color: #fff;
 }
 
 /* Flex Items */
