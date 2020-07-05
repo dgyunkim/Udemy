@@ -1,0 +1,102 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Variables */
+:root {
+  --page-1-color: steelblue;
+  --page-2-color: tan;
+  --page-3-color: teal;
+  --page-4-color: slateblue;
+  --animate-time: 2s;
+}
+
+/* Main Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+  overflow: hidden;
+}
+
+/* Button */
+.btn {
+  display: inline-block;
+  padding: 1rem 2rem;
+  margin-top: 1rem;
+  text-decoration: none;
+  font-size: 1.2rem;
+}
+
+.btn-light {
+  background: #f4f4f4;
+  color: #333;
+}
+
+.btn-dark {
+  background: #333;
+  color: #fff;
+}
+
+/* Page */
+.page {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem;
+  height: 100vh;
+  color: #fff;
+}
+
+.page h1 {
+  font-size: 4rem;
+  line-height: 1.2;
+  margin: 1rem;
+}
+
+.page p {
+  font-size: 1.3rem;
+  margin: 1rem;
+}
+
+#page-1 {
+  background: var(--page-1-color);
+}
+
+#page-1 h1 {
+  transform: translateY(-1200px);
+  animation: title var(--animate-time) ease-in forwards;
+}
+
+@keyframes title {
+  100% {
+    transform: translateY(0);
+  }
+}
+
+#page-1 p {
+  transform: translateX(-1800px);
+  animation: text var(--animate-time) ease-in forwards 2s;
+}
+
+@keyframes text {
+  100% {
+    transform: translateX(0);
+  }
+}
+
+#page-2 {
+  background: var(--page-2-color);
+}
+
+#page-3 {
+  background: var(--page-3-color);
+}
+
+#page-4 {
+  background: var(--page-4-color);
+}

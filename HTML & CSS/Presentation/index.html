@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.1/css/all.min.css"
+      integrity="sha512-xA6Hp6oezhjd6LiLZynuukm80f8BoZ3OpcEYaqKoCV3HKQDrYjDE1Gu8ocxgxoXmwmSzM4iqPvCsOkQNiu41GA=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Presentation</title>
+  </head>
+  <body>
+    <!-- Page 1 -->
+    <section id="page-1" class="page">
+      <h1>Welcome To My Presentation</h1>
+      <p>
+        Lorem ipsum dolor sit amet consectetur adipisicing elit. Facilis
+        accusamus unde nihil. Numquam id sapiente neque ipsa non nulla ducimus
+        repellat corporis nesciunt facilis qui, earum odit voluptate asperiores
+        soluta cupiditate maiores facere iste laudantium deserunt veritatis,
+        consequuntur voluptatem deleniti.
+      </p>
+      <a href="#page-2" class="btn btn-light"
+        >Next Page <i class="fas fa-arrow-circle-down"></i
+      ></a>
+    </section>
+    <!-- Page 2 -->
+    <section id="page-2" class="page">
+      <h1>Page 2</h1>
+      <p>
+        Lorem ipsum, dolor sit amet consectetur adipisicing elit. Facere ut amet
+        dicta fugit accusantium magni, et iusto sapiente velit eos repellendus
+        inventore sequi cum enim fuga soluta sint vitae earum molestias modi
+        hic? Possimus magni omnis veritatis nesciunt velit odit.
+      </p>
+      <div>
+        <a href="#page-1" class="btn btn-dark"
+          >Prev Page <i class="fas fa-arrow-circle-up"></i
+        ></a>
+        <a href="#page-3" class="btn btn-light"
+          >Next Page <i class="fas fa-arrow-circle-down"></i
+        ></a>
+      </div>
+    </section>
+    <!-- Page 3 -->
+    <section id="page-3" class="page">
+      <h1>Page 3</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Provident ipsa
+        perferendis praesentium temporibus expedita numquam? Magni nulla illum
+        hic eum? Odio perspiciatis quia earum optio tempore ratione enim laborum
+        ducimus eum dicta eius corrupti minus corporis, odit aliquam aspernatur
+        incidunt?
+      </p>
+      <div>
+        <a href="#page-2" class="btn btn-dark"
+          >Prev Page <i class="fas fa-arrow-circle-up"></i
+        ></a>
+        <a href="#page-4" class="btn btn-light"
+          >Next Page <i class="fas fa-arrow-circle-down"></i
+        ></a>
+      </div>
+    </section>
+    <!-- Page 4 -->
+    <section id="page-4" class="page">
+      <h1>Page 4</h1>
+      <p>
+        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Maxime itaque
+        eos tenetur facere deserunt. Optio, similique saepe obcaecati magnam
+        aperiam tempore! Voluptate debitis ipsa repellendus iusto provident
+        sint, nulla rerum voluptas vero explicabo sit dolorem at nam suscipit.
+        Delectus, minus!
+      </p>
+      <a href="#page-3" class="btn btn-dark"
+        >Prev Page <i class="fas fa-arrow-circle-up"></i
+      ></a>
+    </section>
+    <!-- Smooth Scrolling Cited From (https://www.w3schools.com/howto/howto_css_smooth_scroll.asp#section2) -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script>
+      $(document).ready(function () {
+        // Add smooth scrolling to all links
+        $("a").on("click", function (event) {
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+
+            // Store hash
+            var hash = this.hash;
+
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $("html, body").animate(
+              {
+                scrollTop: $(hash).offset().top
+              },
+              800,
+              function () {
+                // Add hash (#) to URL when done scrolling (default click behavior)
+                window.location.hash = hash;
+              }
+            );
+          } // End if
+        });
+      });
+    </script>
+  </body>
+</html>
