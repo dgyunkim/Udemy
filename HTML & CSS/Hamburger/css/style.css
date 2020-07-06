@@ -104,7 +104,7 @@ a {
   z-index: -1;
 }
 
-/* Showcase */
+/* Contact */
 #contact::before {
   content: "";
   position: absolute;
