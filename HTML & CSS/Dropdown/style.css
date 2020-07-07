@@ -1,0 +1,125 @@
+/* Reset */
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+/* Main Styling */
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  line-height: 1.4;
+}
+
+li {
+  list-style: none;
+}
+
+a {
+  color: #000;
+  text-decoration: none;
+}
+
+/* Utilities */
+.container {
+  max-width: 1100px;
+  margin: auto;
+}
+
+/* Navbar */
+.navbar {
+  background: #f5f5f5;
+  display: flex;
+  position: fixed;
+  width: 100%;
+  z-index: 1;
+}
+
+.navbar nav > ul > li {
+  display: inline-block;
+  padding: 1rem 2rem;
+  position: relative;
+}
+
+.navbar nav > ul > li:hover {
+  background: coral;
+}
+
+.navbar nav ul li ul {
+  display: none;
+}
+
+.navbar nav ul li:hover ul {
+  display: block;
+  position: absolute;
+  background: #f5f5f5;
+  width: 200px;
+  left: 0;
+  margin-top: 1rem;
+}
+
+/* .navbar nav ul li:hover ul li {
+  padding: 1rem 2rem;
+} */
+
+.navbar nav ul li ul li a {
+  display: block;
+  padding: 1rem 2rem;
+}
+
+.navbar nav ul li:hover ul li:hover {
+  background: #e0e0e0;
+}
+
+.navbar nav ul li:hover ul li span {
+  background: coral;
+  color: #fff;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.75rem;
+  float: right;
+  border-radius: 0.5rem;
+}
+
+.navbar nav ul li:hover ul li:hover span {
+  background: chocolate;
+}
+
+/* Showcase */
+.showcase {
+  background: rgba(0, 0, 0, 0.3);
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: #fff;
+  position: relative;
+}
+
+.showcase::before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: url("./img.jpg");
+  z-index: -1;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+  .navbar nav > ul > li {
+    display: block;
+    width: 100vw;
+    text-align: center;
+  }
+
+  .navbar nav ul li:hover ul {
+    position: relative;
+    width: 100%;
+  }
+
+  .navbar nav ul li:hover ul li span {
+    float: none;
+    margin-left: 1rem;
+  }
+}
