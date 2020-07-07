@@ -151,6 +151,7 @@ h1 {
 
   #timeline > ul > li:nth-child(even) > div {
     left: 3rem;
+    transform: translateX(20rem);
   }
 
   #timeline > ul > li:nth-child(even) > div::before {
