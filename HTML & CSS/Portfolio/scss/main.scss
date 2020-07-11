@@ -5,17 +5,16 @@
   box-sizing: border-box;
 }
 
-// Variables
-$primary-color: rgb(253, 196, 40);
-$light-color: #f5f5f5;
-$medium-color: #ccc;
-$dark-color: #333;
-$website-width: 1200px;
+// Import Variables
+@import "variables";
+
+// Import Utilities
+@import "utilities";
 
 // Import Fonts
 @import url("https://fonts.googleapis.com/css2?family=Dosis:wght@200;300;400;500;600;700;800&display=swap");
 
-// MainStyling
+// Main Styling
 body {
   font-family: "Dosis", sans-serif;
   line-height: 1.6;
@@ -46,85 +45,7 @@ img {
   height: 100%;
 }
 
-// Utilities
-.container {
-  max-width: $website-width;
-  margin: auto;
-}
-
-.p-lead {
-  font-size: 1.3rem;
-  margin-bottom: 2rem;
-}
-
-.btn {
-  display: inline-block;
-  border: none;
-  cursor: pointer;
-  padding: 1rem 2rem;
-  transition: all 1s;
-
-  &-light {
-    background: $light-color;
-    color: $dark-color;
-  }
-
-  &-dark {
-    background: $dark-color;
-    color: #fff;
-  }
-
-  &:hover {
-    background: $primary-color;
-    color: $dark-color;
-  }
-}
-
-.underline {
-  border: 1px solid $primary-color;
-  width: 4rem;
-  margin: 0.5rem auto 1rem auto;
-}
-
-.boxes {
-  display: flex;
-
-  .box {
-    flex: 1;
-    padding: 0.5rem;
-  }
-}
-
-.bg-primary {
-  background: $primary-color;
-}
-
-.bg-light {
-  background: $light-color;
-}
-
-.bg-medium {
-  background: $medium-color;
-}
-
-.bg-dark {
-  background: $dark-color;
-}
-
-.stats-title {
-  font-size: 1.5rem;
-}
-
-.stats-value {
-  font-size: 2rem;
-  font-weight: 500;
-}
-
-.border-medium {
-  border: 3px dotted $medium-color;
-}
-
-//Navbar
+// Navbar
 .navbar {
   padding: 1rem;
   background: url("../img/showcase.jpg") center 30% / cover;
@@ -405,14 +326,14 @@ img {
 
       .img-cover {
         position: absolute;
-        top: -60vw;
-        left: -60vw;
-        width: 60vw;
-        height: 60vw;
+        top: -300%;
+        left: -300%;
+        width: 300%;
+        height: 300%;
         transform: rotate(55deg);
         transform-origin: center center;
         transition: all 1s;
-        opacity: 0.8;
+        opacity: 0.9;
         z-index: 1;
       }
 
@@ -438,8 +359,8 @@ img {
 
       &:hover {
         .img-cover {
-          top: -10vw;
-          left: -10vw;
+          top: -25%;
+          left: -25%;
           z-index: 1;
           transition: all 1s;
         }
@@ -499,6 +420,7 @@ img {
 .contact-section-b {
   color: #fff;
   text-align: center;
+
   .bg-dark {
     padding: 3rem;
   }
@@ -522,7 +444,6 @@ footer {
     justify-content: space-between;
     align-items: center;
     padding: 1.5rem;
-    height: 5rem;
 
     .social {
       i {
@@ -538,3 +459,6 @@ footer {
     }
   }
 }
+
+// Import Media Queries
+@import "media";

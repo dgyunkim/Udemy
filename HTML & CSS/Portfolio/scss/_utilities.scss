@@ -1,0 +1,76 @@
+.container {
+  max-width: $website-width;
+  margin: auto;
+}
+
+.p-lead {
+  font-size: 1.3rem;
+  margin-bottom: 2rem;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 1rem 2rem;
+  transition: all 1s;
+
+  &-light {
+    background: $light-color;
+    color: $dark-color;
+  }
+
+  &-dark {
+    background: $dark-color;
+    color: #fff;
+  }
+
+  &:hover {
+    background: $primary-color;
+    color: $dark-color;
+  }
+}
+
+.underline {
+  border: 1px solid $primary-color;
+  width: 4rem;
+  margin: 0.5rem auto 1rem auto;
+}
+
+.boxes {
+  display: flex;
+
+  .box {
+    flex: 1;
+    padding: 0.5rem;
+  }
+}
+
+.bg-primary {
+  background: $primary-color;
+}
+
+.bg-light {
+  background: $light-color;
+}
+
+.bg-medium {
+  background: $medium-color;
+}
+
+.bg-dark {
+  background: $dark-color;
+}
+
+.stats-title {
+  font-size: 1.5rem;
+}
+
+.stats-value {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+.border-medium {
+  border: 3px dotted $medium-color;
+}

@@ -4,30 +4,6 @@
   margin: 0;
   box-sizing: border-box; }
 
-body {
-  font-family: "Dosis", sans-serif;
-  line-height: 1.6; }
-
-li {
-  list-style: none; }
-
-a {
-  text-decoration: none; }
-
-h2,
-h3,
-h4 {
-  text-transform: uppercase;
-  font-weight: 500; }
-
-h2 {
-  font-size: 2rem; }
-
-img {
-  display: block;
-  width: 100%;
-  height: 100%; }
-
 .container {
   max-width: 1200px;
   margin: auto; }
@@ -84,6 +60,30 @@ img {
 
 .border-medium {
   border: 3px dotted #ccc; }
+
+body {
+  font-family: "Dosis", sans-serif;
+  line-height: 1.6; }
+
+li {
+  list-style: none; }
+
+a {
+  text-decoration: none; }
+
+h2,
+h3,
+h4 {
+  text-transform: uppercase;
+  font-weight: 500; }
+
+h2 {
+  font-size: 2rem; }
+
+img {
+  display: block;
+  width: 100%;
+  height: 100%; }
 
 .navbar {
   padding: 1rem;
@@ -260,14 +260,14 @@ img {
       position: relative; }
       .work-section-a .grid-3-3 .img-container .img-cover {
         position: absolute;
-        top: -60vw;
-        left: -60vw;
-        width: 60vw;
-        height: 60vw;
+        top: -300%;
+        left: -300%;
+        width: 300%;
+        height: 300%;
         transform: rotate(55deg);
         transform-origin: center center;
         transition: all 1s;
-        opacity: 0.8;
+        opacity: 0.9;
         z-index: 1; }
       .work-section-a .grid-3-3 .img-container .img-cover-content {
         position: absolute;
@@ -286,8 +286,8 @@ img {
       .work-section-a .grid-3-3 .img-container img {
         transition: all 0.5s; }
       .work-section-a .grid-3-3 .img-container:hover .img-cover {
-        top: -10vw;
-        left: -10vw;
+        top: -25%;
+        left: -25%;
         z-index: 1;
         transition: all 1s; }
       .work-section-a .grid-3-3 .img-container:hover .img-cover-content {
@@ -337,8 +337,7 @@ footer {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 1.5rem;
-    height: 5rem; }
+    padding: 1.5rem; }
     footer .container .social i {
       border: solid 3px #fff;
       border-radius: 50%;
@@ -346,3 +345,88 @@ footer {
       margin: 0.7rem; }
       footer .container .social i:hover {
         background: #fdc428; }
+
+@media (max-width: 500px) {
+  .p-lead {
+    font-size: 1rem; }
+  .boxes {
+    flex-direction: column; }
+    .boxes .box {
+      flex: 1;
+      padding: 0.5rem; }
+  .navbar .container {
+    flex-direction: column; }
+    .navbar .container .logo {
+      width: 2rem;
+      height: 2rem; }
+    .navbar .container nav ul li {
+      padding: 1rem; }
+  .showcase {
+    height: 70vh; }
+    .showcase .showcase-content .container {
+      padding-top: 10vh; }
+      .showcase .showcase-content .container h1 {
+        font-size: 1.7rem; }
+  .home-section-b .boxes .box {
+    padding: 1rem; }
+  .about-section-a .grid-2-3 {
+    display: flex;
+    flex-direction: column; }
+    .about-section-a .grid-2-3 .photo-me {
+      height: 30vh; }
+    .about-section-a .grid-2-3 .box {
+      padding: 1rem; }
+      .about-section-a .grid-2-3 .box h3 {
+        margin: 0;
+        padding: 0; }
+  .about-section-b .about-logos .container {
+    flex-wrap: wrap; }
+    .about-section-b .about-logos .container img {
+      flex: 50%;
+      padding: 0 1rem; }
+  .contact-section-b .bg-dark {
+    padding: 1rem; }
+    .contact-section-b .bg-dark .box {
+      padding: 1rem; }
+  .contact-section-b .bg-primary {
+    padding: 2rem; }
+    .contact-section-b .bg-primary p {
+      font-size: 1.7rem; }
+  .about-section-c .profile {
+    justify-content: center; }
+    .about-section-c .profile img {
+      align-self: flex-start; }
+  .work-section-a .grid-3-3 {
+    display: flex;
+    flex-direction: column; }
+  .contact-section-a .input-group {
+    flex-wrap: wrap; }
+  .contact-section-b .bg-dark .box {
+    padding: 2rem; }
+  .contact-section-b .bg-primary {
+    padding: 2rem; }
+    .contact-section-b .bg-primary p {
+      font-size: 1.7rem; }
+  footer .container {
+    flex-direction: column-reverse; } }
+
+@media (max-width: 320px) {
+  .p-lead {
+    font-size: 0.9rem; }
+  .boxes {
+    flex-direction: column; }
+    .boxes .box {
+      flex: 1;
+      padding: 1rem; }
+  .showcase {
+    height: 70vh; }
+    .showcase .showcase-content .container {
+      padding-top: 10vh; }
+      .showcase .showcase-content .container h1 {
+        font-size: 1.5rem; }
+  .contact-section-a .input-group {
+    flex-wrap: wrap; }
+  footer .container {
+    flex-direction: column-reverse; }
+    footer .container .social {
+      display: flex; } }

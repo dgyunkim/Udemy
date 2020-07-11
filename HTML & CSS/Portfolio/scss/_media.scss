@@ -1,0 +1,214 @@
+// Phone
+@media (max-width: 500px) {
+  // Utilities
+  .p-lead {
+    font-size: 1rem;
+  }
+
+  .boxes {
+    flex-direction: column;
+
+    .box {
+      flex: 1;
+      padding: 0.5rem;
+    }
+  }
+
+  // Navbar
+  .navbar {
+    .container {
+      flex-direction: column;
+
+      .logo {
+        width: 2rem;
+        height: 2rem;
+      }
+
+      nav {
+        ul {
+          li {
+            padding: 1rem;
+          }
+        }
+      }
+    }
+  }
+
+  // Showcase
+  .showcase {
+    height: 70vh;
+
+    // Showcase Content
+    .showcase-content {
+      .container {
+        padding-top: 10vh;
+
+        h1 {
+          font-size: 1.7rem;
+        }
+      }
+    }
+  }
+
+  // Home Section B
+  .home-section-b {
+    .boxes {
+      .box {
+        padding: 1rem;
+      }
+    }
+  }
+
+  // About Section A
+  .about-section-a {
+    .grid-2-3 {
+      display: flex;
+      flex-direction: column;
+
+      .photo-me {
+        height: 30vh;
+      }
+
+      .box {
+        padding: 1rem;
+        h3 {
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+  // About Section B
+  .about-section-b {
+    .about-logos {
+      .container {
+        flex-wrap: wrap;
+
+        img {
+          flex: 50%;
+          padding: 0 1rem;
+        }
+      }
+    }
+  }
+
+  // Contact Section B
+  .contact-section-b {
+    .bg-dark {
+      padding: 1rem;
+      .box {
+        padding: 1rem;
+      }
+    }
+
+    .bg-primary {
+      padding: 2rem;
+
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  // About Section C
+  .about-section-c {
+    .profile {
+      justify-content: center;
+
+      img {
+        align-self: flex-start;
+      }
+    }
+  }
+
+  // Work Section A
+  .work-section-a {
+    .grid-3-3 {
+      display: flex;
+      flex-direction: column;
+    }
+  }
+
+  // Contact Section A
+  .contact-section-a {
+    .input-group {
+      flex-wrap: wrap;
+    }
+  }
+
+  // Contact Section B
+  .contact-section-b {
+    .bg-dark {
+      .box {
+        padding: 2rem;
+      }
+    }
+
+    .bg-primary {
+      padding: 2rem;
+
+      p {
+        font-size: 1.7rem;
+      }
+    }
+  }
+
+  // Footer
+  footer {
+    .container {
+      flex-direction: column-reverse;
+    }
+  }
+}
+
+// iPhone SE or Smaller
+@media (max-width: 320px) {
+  // Utilities
+  .p-lead {
+    font-size: 0.9rem;
+  }
+
+  .boxes {
+    flex-direction: column;
+
+    .box {
+      flex: 1;
+      padding: 1rem;
+    }
+  }
+
+  // Showcase
+  .showcase {
+    height: 70vh;
+
+    // Showcase Content
+    .showcase-content {
+      .container {
+        padding-top: 10vh;
+
+        h1 {
+          font-size: 1.5rem;
+        }
+      }
+    }
+  }
+
+  // Contact Section A
+  .contact-section-a {
+    .input-group {
+      flex-wrap: wrap;
+    }
+  }
+
+  // Footer
+  footer {
+    .container {
+      flex-direction: column-reverse;
+
+      .social {
+        display: flex;
+      }
+    }
+  }
+}
