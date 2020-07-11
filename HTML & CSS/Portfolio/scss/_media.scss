@@ -127,6 +127,10 @@
     .grid-3-3 {
       display: flex;
       flex-direction: column;
+
+      .img-container {
+        border: $primary-color 1px dotted;
+      }
     }
   }
 
