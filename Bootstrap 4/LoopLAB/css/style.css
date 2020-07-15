@@ -1,0 +1,55 @@
+/* Main Styling */
+body {
+  background: #333;
+  color: #fff;
+}
+
+/* Navbar */
+.navbar {
+  border-bottom: 3px solid #008ed6;
+  opacity: 0.8;
+}
+
+/* Home Section */
+#home-section {
+  background: url("../img/home.jpg");
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+  min-height: 700px;
+  position: relative;
+}
+
+#home-section .dark-overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+#home-section .dark-overlay .container {
+  padding-top: 150px;
+}
+
+#home-section .dark-overlay .container .card-form {
+  opacity: 0.8;
+}
+
+/* Icon Style */
+#home-section .fas.fa-check,
+#create-section .fas.fa-check {
+  background: #fff;
+  color: #008ed6;
+  padding: 5px;
+  border-radius: 5px;
+}
+
+#explore-section .fas.fa-check,
+#share-section .fas.fa-check {
+  background: #333;
+  color: #fff;
+  padding: 5px;
+  border-radius: 5px;
+}
