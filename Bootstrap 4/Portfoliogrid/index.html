@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css"
+      integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk"
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.css"
+      integrity="sha512-Velp0ebMKjcd9RiCoaHhLXkR1sFoCCWXNp6w4zj1hfMifYB5441C+sKeBl/T/Ka6NjBiRfBBQRaQq65ekYz3UQ=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./css/style.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <div class="container accordion" id="info">
+        <div class="row">
+          <div class="col-md-4 p-0 m-0">
+            <img src="./img/person1.jpg" alt="" class="w-100 h-100" />
+          </div>
+          <div class="col-md-8 p-0 m-0 d-flex flex-column">
+            <div
+              class="bg-dark d-flex justify-content-around align-items-center p-2 p-md-4"
+            >
+              <h1 class="display-4 text-white">Sam Kim</h1>
+              <a href="https://twitter.com" class="text-white"
+                ><i class="fab fa-twitter fa-2x"></i
+              ></a>
+              <a href="https://facebook.com" class="text-white"
+                ><i class="fab fa-facebook fa-2x"></i
+              ></a>
+              <a href="https://instagram.com" class="text-white"
+                ><i class="fab fa-instagram fa-2x"></i
+              ></a>
+              <a href="https://github.com" class="text-white"
+                ><i class="fab fa-github fa-2x"></i
+              ></a>
+            </div>
+            <div class="bg-secondary text-white">
+              <p class="lead mb-0 p-2 p-md-3 ml-4">
+                Experienced Full Stack Web Developer
+              </p>
+            </div>
+            <div class="row p-0 m-0 flex-fill d-flex">
+              <div
+                class="col-3 flex-fill bg-primary text-white d-flex flex-column justify-content-center align-items-center p-4"
+                data-toggle="collapse"
+                data-target="#home"
+              >
+                <i class="fas fa-home fa-2x"></i>
+                <h6 class="d-none d-sm-block">Home</h6>
+              </div>
+              <div
+                class="col-3 flex-fill bg-success text-white d-flex flex-column justify-content-center align-items-center p-4"
+                data-toggle="collapse"
+                data-target="#resume"
+              >
+                <i class="fas fa-graduation-cap fa-2x"></i>
+                <h6 class="d-none d-sm-block">Resume</h6>
+              </div>
+              <div
+                class="col-3 flex-fill bg-warning text-white d-flex flex-column justify-content-center align-items-center p-4"
+                data-toggle="collapse"
+                data-target="#work"
+              >
+                <i class="fas fa-folder-open fa-2x"></i>
+                <h6 class="d-none d-sm-block">Work</h6>
+              </div>
+              <div
+                class="col-3 flex-fill bg-danger text-white d-flex flex-column justify-content-center align-items-center p-4"
+                data-toggle="collapse"
+                data-target="#contact"
+              >
+                <i class="fas fa-envelope fa-2x"></i>
+                <h6 class="d-none d-sm-block">Contact</h6>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row collapse show" id="home" data-parent="#info">
+          <div class="col-12 bg-primary text-white p-4 border border-dark">
+            <h2>Welcome To My Page</h2>
+            <p class="lead mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius,
+              vel!
+            </p>
+          </div>
+          <div class="col-12 p-4 border">
+            <h3>My Skills</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iure
+              debitis iusto consectetur beatae reprehenderit in pariatur fugit
+              molestias obcaecati architecto!
+            </p>
+            <hr />
+            <div class="form-group">
+              <h4>HTML 5</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-primary"
+                  style="width: 80%;"
+                ></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <h4>CSS 3</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-info"
+                  style="width: 80%;"
+                ></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <h4>JavaScript</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-success"
+                  style="width: 70%;"
+                ></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <h4>Java</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-warning"
+                  style="width: 70%;"
+                ></div>
+              </div>
+            </div>
+            <div class="form-group">
+              <h4>Python</h4>
+              <div class="progress">
+                <div
+                  class="progress-bar progress-bar-striped bg-danger"
+                  style="width: 60%;"
+                ></div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row collapse" id="resume" data-parent="#info">
+          <div class="col-12 bg-success text-white p-4 border border-dark">
+            <h2>My Resume</h2>
+            <p class="lead mb-0">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Itaque,
+              commodi!
+            </p>
+          </div>
+          <div class="col-12 p-4 border">
+            <h3>Where Have I Worked?</h3>
+            <p>
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+              Inventore ullam quos optio odio similique dolorum iste, quas
+              temporibus alias facilis?
+            </p>
+            <hr />
+            <div class="row">
+              <div class="col-md-4 mb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="px-1">Devmasters</h4>
+                    <p class="px-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, maxime!
+                    </p>
+                    <p class="bg-primary text-white p-1">
+                      Position: Full Stack Developer
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="mb-0 text-muted">Dates: 2017 - 2020</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4 mb-2">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="px-1">Service Pro</h4>
+                    <p class="px-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, maxime!
+                    </p>
+                    <p class="bg-info text-white p-1">
+                      Position: Back-end Developer
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="mb-0 text-muted">Dates: 2015 - 2017</p>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-4">
+                <div class="card">
+                  <div class="card-body">
+                    <h4 class="px-1">123 Designs</h4>
+                    <p class="px-1">
+                      Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                      Quidem, maxime!
+                    </p>
+                    <p class="bg-info text-white p-1">
+                      Position: Front-end Developer
+                    </p>
+                  </div>
+                  <div class="card-footer">
+                    <p class="mb-0 text-muted">Dates: 2013 - 2015</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="row collapse" id="work" data-parent="#info">
+          <div class="col-12 bg-warning text-white p-4 border border-dark">
+            <h2>My Work</h2>
+            <p class="lead mb-0">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Esse,
+              nihil!
+            </p>
+          </div>
+          <div class="col-12 p-4 border">
+            <h3>What Have I Built?</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Alias
+              vero accusamus vel quidem eos nulla eum repellat vitae in
+              adipisci?
+            </p>
+            <hr />
+            <div class="row no-gutters">
+              <a
+                href="./img/photo1.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo1.jpeg" alt="" class="img-fluid" />
+              </a>
+              <a
+                href="./img/photo2.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo2.jpeg" alt="" class="img-fluid" />
+              </a>
+              <a
+                href="./img/photo3.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo3.jpeg" alt="" class="img-fluid" />
+              </a>
+              <a
+                href="./img/photo4.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo4.jpeg" alt="" class="img-fluid" />
+              </a>
+            </div>
+            <div class="row no-gutters">
+              <a
+                href="./img/photo5.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo5.jpeg" alt="" class="img-fluid" />
+              </a>
+              <a
+                href="./img/photo6.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo6.jpeg" alt="" class="img-fluid" />
+              </a>
+              <a
+                href="./img/photo7.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo7.jpeg" alt="" class="img-fluid" />
+              </a>
+              <a
+                href="./img/photo8.jpeg"
+                class="col-md-3"
+                data-toggle="lightbox"
+                data-gallery="#photos"
+              >
+                <img src="./img/photo8.jpeg" alt="" class="img-fluid" />
+              </a>
+            </div>
+          </div>
+        </div>
+        <div class="row collapse" id="contact" data-parent="#info">
+          <div class="col-12 bg-danger text-white p-4 border border-dark">
+            <h2>Contact</h2>
+            <p class="lead mb-0">
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ab,
+              doloremque.
+            </p>
+          </div>
+          <div class="col-12 p-4 border">
+            <h3>Get In Touch</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi,
+              doloremque?
+            </p>
+            <hr />
+            <form>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white"
+                      ><i class="fas fa-user"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="text"
+                    placeholder="Name"
+                    class="form-control form-control-lg bg-secondary text-white"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white"
+                      ><i class="fas fa-envelope"></i
+                    ></span>
+                  </div>
+                  <input
+                    type="email"
+                    placeholder="Email"
+                    class="form-control form-control-lg bg-secondary text-white"
+                  />
+                </div>
+              </div>
+              <div class="form-group">
+                <div class="input-group input-group-lg">
+                  <div class="input-group-prepend">
+                    <span class="input-group-text bg-danger text-white"
+                      ><i class="fas fa-pencil-alt"></i
+                    ></span>
+                  </div>
+                  <textarea
+                    rows="3"
+                    placeholder="Message"
+                    class="form-control form-control-lg bg-secondary text-white"
+                  ></textarea>
+                </div>
+              </div>
+              <div class="form-group">
+                <input
+                  type="submit"
+                  value="Submit"
+                  class="btn btn-lg btn-danger btn-block"
+                />
+              </div>
+            </form>
+          </div>
+        </div>
+        <div class="row bg-secondary">
+          <div class="col p-4 m-0">
+            <button class="btn btn-outline-light">
+              <i class="fas fa-cloud"></i> Download Resume
+            </button>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- Scripts -->
+    <script
+      src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+      integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+      integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+      integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/ekko-lightbox/5.3.0/ekko-lightbox.min.js"
+      integrity="sha512-Y2IiVZeaBwXG1wSV7f13plqlmFOx8MdjuHyYFVoYzhyRr3nH/NMDjTBSswijzADdNzMyWNetbLMfOpIPl6Cv9g=="
+      crossorigin="anonymous"
+    ></script>
+
+    <script>
+      $(document).on("click", '[data-toggle="lightbox"]', function (event) {
+        event.preventDefault();
+        $(this).ekkoLightbox();
+      });
+    </script>
+  </body>
+</html>

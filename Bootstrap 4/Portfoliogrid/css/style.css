@@ -1,0 +1,16 @@
+.fab:hover {
+  color: #aaa;
+}
+
+#info .col-3 {
+  cursor: pointer;
+}
+
+#info .col-3:hover {
+  opacity: 0.8;
+}
+
+#contact input::placeholder,
+#contact textarea::placeholder {
+  color: #333;
+}
