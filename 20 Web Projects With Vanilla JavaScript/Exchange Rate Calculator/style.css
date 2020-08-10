@@ -1,0 +1,87 @@
+/* Import Fonts */
+@import url("https://fonts.googleapis.com/css2?family=Roboto&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+}
+
+img {
+  width: 10rem;
+}
+
+h1 {
+  color: rgb(118, 201, 162);
+  font-weight: bold;
+  margin: 1rem 0;
+}
+
+p {
+  margin: 1rem 0;
+}
+
+.input-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem 0;
+}
+
+select {
+  font-size: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #dedede;
+}
+
+input {
+  font-size: 1.5rem;
+  text-align: right;
+  border: none;
+}
+
+.rate-group {
+  width: 50%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.btn {
+  padding: 0.5rem 1rem;
+  background: rgb(118, 201, 162);
+  color: #fff;
+  border: 1px solid #dedede;
+  display: inline-block;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+span {
+  font-size: 15px;
+  text-align: right;
+  color: rgb(118, 201, 162);
+}
+
+select:focus,
+input:focus,
+.btn:focus {
+  outline: none;
+}
+
+@media (max-width: 600px) {
+  .input-group,
+  .rate-group {
+    width: 80%;
+  }
+}
