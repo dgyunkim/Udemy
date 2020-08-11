@@ -1,0 +1,166 @@
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans&display=swap");
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", sans-serif;
+  position: relative;
+}
+
+nav {
+  background: rgb(59, 20, 150);
+  color: #fff;
+  width: 20vw;
+  min-height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transform: translateX(-20vw);
+  transition: ease 0.5s;
+}
+
+nav li {
+  padding: 1rem;
+  border: 1px solid #666;
+}
+
+.showcase {
+  background: rgb(59, 20, 150);
+  color: #fff;
+  padding: 2rem;
+  text-align: center;
+}
+
+.showcase h1,
+.showcase p {
+  margin-bottom: 1rem;
+}
+
+.menu-icon {
+  position: absolute;
+  top: 30px;
+  left: 30px;
+  padding: 0.5rem;
+  background: #333;
+  font-size: 1.5rem;
+  cursor: pointer;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  cursor: pointer;
+  padding: 0.5rem 1.5rem;
+  color: #fff;
+  background: rgb(170, 28, 226);
+  font-size: 1rem;
+  border-radius: 0.5rem;
+}
+
+.btn:focus {
+  outline: none;
+}
+
+.container {
+  width: 80%;
+  margin: auto;
+}
+
+section h2 {
+  margin-top: 2rem;
+}
+
+section p {
+  margin-top: 1rem;
+}
+
+section ul {
+  margin-top: 1rem;
+  margin-left: 2rem;
+}
+
+.modal {
+  width: 50vw;
+  min-height: 50vh;
+  background: #fff;
+  border-radius: 0.5rem;
+  overflow: hidden;
+  position: fixed;
+  top: 15vh;
+  left: 25vw;
+  display: none;
+  opacity: 0;
+  z-index: 2;
+}
+
+.modal-title {
+  background: rgb(59, 20, 150);
+  color: #fff;
+  display: flex;
+  justify-content: space-between;
+  padding: 0.5rem 1rem;
+}
+
+.modal-title .close {
+  cursor: pointer;
+}
+
+.modal-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 1rem;
+}
+
+.form-group {
+  margin: 1rem 0;
+  display: flex;
+  flex-direction: column;
+}
+
+.form-group input {
+  padding: 0.5rem;
+}
+
+.landing {
+  margin: 0;
+  transition: ease 0.5s;
+}
+
+body.modal-on::after {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  min-width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.7);
+  z-index: 1;
+}
+
+body.modal-on .modal {
+  display: block;
+  animation: fadeIn 0.5s ease-in 1 forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+
+  100% {
+    opacity: 1;
+  }
+}
+
+body.slide-on .landing {
+  transform: translateX(20vw);
+}
+
+body.slide-on nav {
+  transform: translateX(0vw);
+}
