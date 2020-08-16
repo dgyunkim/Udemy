@@ -48,7 +48,7 @@ body {
 
 .title-container .title {
   font-size: 1rem;
-  margin-bottom: 0.5rem;
+  margin-bottom: 1rem;
 }
 
 .title-container .progress {
@@ -57,6 +57,10 @@ body {
   opacity: 0.5;
   background: #333;
   border-radius: 1rem;
+}
+
+.title-container .progress:hover {
+  cursor: pointer;
 }
 
 .title-container .progress .progress-bar {
@@ -81,7 +85,7 @@ body {
 }
 
 .music-player.play .title-container {
-  transform: translateY(-60px);
+  transform: translateY(-80px);
   opacity: 0.8;
 }
 
