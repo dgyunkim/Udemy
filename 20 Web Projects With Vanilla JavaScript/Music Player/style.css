@@ -1,0 +1,116 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Courier New", Courier, monospace;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  background: rgb(250, 95, 142);
+}
+
+.music-player {
+  width: 400px;
+  height: 80px;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 2px 10px 10px 2px rgba(0, 0, 0, 0.2);
+  position: relative;
+  margin: 7rem;
+}
+
+.title-container {
+  width: 350px;
+  height: 80px;
+  background: #fff;
+  margin: auto;
+  border-radius: 10px 10px 0 0;
+  opacity: 0;
+  text-align: center;
+  padding-top: 1rem;
+  transition: 0.5s ease-in-out;
+}
+
+.title-container .container {
+  width: 60%;
+  height: 100%;
+  margin-left: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+.title-container .title {
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+}
+
+.title-container .progress {
+  width: 80%;
+  height: 10px;
+  opacity: 0.5;
+  background: #333;
+  border-radius: 1rem;
+}
+
+.title-container .progress .progress-bar {
+  width: 0%;
+  height: 100%;
+  background: red;
+  border-radius: 1rem;
+}
+
+.music-img {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  position: absolute;
+  top: -50px;
+  left: 40px;
+  animation-name: rotation;
+  animation-duration: 3s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+  animation-play-state: paused;
+}
+
+.music-player.play .title-container {
+  transform: translateY(-60px);
+  opacity: 0.8;
+}
+
+.music-player.play .music-img {
+  animation-play-state: running;
+}
+
+.music-buttons {
+  position: absolute;
+  right: 0;
+  top: 20px;
+  width: 250px;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 1rem;
+}
+
+.music-buttons i {
+  cursor: pointer;
+  color: #dedede;
+}
+
+.music-buttons i:hover {
+  color: #333;
+}
+
+@keyframes rotation {
+  100% {
+    transform: rotate(360deg);
+  }
+}
