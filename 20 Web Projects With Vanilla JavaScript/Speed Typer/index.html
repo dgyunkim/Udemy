@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/css/all.min.css"
+      integrity="sha512-1PKOgIY59xJ8Co8+NE6FZ+LOAZKjy+KY8iq0G4B3CyeY6wYHN3yt9PW0XpSriVlkMXe40PTKnXrLnZ9+fkDaog=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Speed Typer</title>
+  </head>
+  <body>
+    <div class="setting-container" id="setting-container">
+      <h3>Difficulty:</h3>
+      <select id="difficulty">
+        <option value="easy">Easy</option>
+        <option value="medium">Medium</option>
+        <option value="hard">Hard</option>
+      </select>
+    </div>
+    <div class="typer-container" id="typer-container">
+      <div class="title">
+        <h1>
+          <i class="fas fa-keyboard"></i> Speed Typer
+          <i class="fas fa-keyboard"></i>
+        </h1>
+      </div>
+      <div class="time-score">
+        <p>Time left: <span id="time-left"></span></p>
+        <p>Score: <span id="current-score">0</span></p>
+      </div>
+      <p>Type the following:</p>
+      <p class="word" id="word"></p>
+      <input
+        type="text"
+        class="answer"
+        id="answer"
+        placeholder="Type the word here"
+      />
+    </div>
+    <div class="result-container" id="result-container">
+      <h2>Time ran out</h2>
+      <p>Your final score is <span id="result-score"></span></p>
+      <button class="btn" id="play-again">Play Again</button>
+    </div>
+    <button class="btn" id="setting-btn">
+      <i class="fas fa-cog"></i>
+    </button>
+    <script src="./script.js"></script>
+  </body>
+</html>
