@@ -1,0 +1,154 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: rgb(241, 209, 121);
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  text-align: center;
+  padding: 2rem 0;
+}
+
+.btn {
+  background: rgb(238, 126, 22);
+  display: block;
+  margin: auto;
+  padding: 0.5rem 1rem;
+  border: none;
+  color: #333;
+  cursor: pointer;
+}
+
+.btn-block {
+  width: 100%;
+}
+
+.modal {
+  background: #333;
+  color: #fff;
+  width: 80%;
+  display: flex;
+  flex-direction: column;
+  padding: 2rem;
+  position: absolute;
+  top: 25%;
+  transform: translateY(-1000px);
+  transition: transform 0.5s ease-in-out;
+}
+
+.modal.show {
+  transform: translate(0);
+}
+
+.modal .close {
+  position: absolute;
+  right: 2rem;
+  cursor: pointer;
+}
+
+.modal select {
+  margin: 1rem 0;
+  font-size: 1.2rem;
+}
+
+.modal textarea {
+  padding: 0.5rem;
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.boxes {
+  padding: 2rem;
+  display: grid;
+  grid-template-columns: repeat(4, minmax(280px, 350px));
+  gap: 1rem;
+}
+
+.box {
+  cursor: pointer;
+}
+
+.box img {
+  display: block;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 200px;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+  margin: auto;
+}
+
+.img1 {
+  background: url("./img/drink.jpg");
+}
+.img2 {
+  background: url("./img/food.jpg");
+}
+.img3 {
+  background: url("./img/tired.jpg");
+}
+.img4 {
+  background: url("./img/hurt.jpg");
+}
+.img5 {
+  background: url("./img/happy.jpg");
+}
+.img6 {
+  background: url("./img/angry.jpg");
+}
+.img7 {
+  background: url("./img/sad.jpg");
+}
+.img8 {
+  background: url("./img/scared.jpg");
+}
+.img9 {
+  background: url("./img/outside.jpg");
+}
+.img10 {
+  background: url("./img/home.jpg");
+}
+.img11 {
+  background: url("./img/school.jpg");
+}
+.img12 {
+  background: url("./img/grandma.jpg");
+}
+
+.box p {
+  background: #333;
+  color: #fff;
+  padding: 1rem 2rem;
+  text-align: center;
+  font-size: 1.2rem;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+}
+
+@media (max-width: 1200px) {
+  .boxes {
+    grid-template-columns: repeat(3, minmax(280px, 350px));
+  }
+}
+
+@media (max-width: 900px) {
+  .boxes {
+    grid-template-columns: repeat(2, minmax(280px, 350px));
+  }
+}
+
+@media (max-width: 600px) {
+  .boxes {
+    grid-template-columns: repeat(1, minmax(280px, 350px));
+  }
+}
